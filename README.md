@@ -94,10 +94,56 @@ Ported to Quickshell for Hyprland with modifications.
 Based on the quickshell wallpaper picker concept. Modified with dock-style
 tile effect and `awww` integration.
 
+### hyprlock
+
+Screen locker using [hyprlock](https://github.com/hyprwm/hyprlock). Comes with
+multiple layout options and helper scripts for media, battery, weather, and
+notification display.
+
+**Layouts:** `layout1` through `layout20` in `my_configs/hyprlock/layouts/`.
+
+To switch layout, edit `~/.config/hypr/hyprlock.conf`:
+
+```conf
+# comment out the current layout
+# source = $hyprlockDir/layouts/layout5.conf
+# uncomment the one you want
+source = $hyprlockDir/layouts/layout13.conf
+```
+
+**Manual Install:**
+```bash
+cp my_configs/hyprlock/hyprlock.conf ~/.config/hypr/
+cp -r my_configs/hyprlock/layouts ~/.config/hyprlock/
+cp -r my_configs/hyprlock/scripts ~/.config/hyprlock/
+cp my_configs/hyprlock/colors.conf ~/.config/hyprlock/
+```
+
+**Keybind:** `Super+L` triggers hyprlock (configured in `~/.config/caelestia/hypr-user.lua`).
+
+### SDDM Theme (forest)
+
+SDDM login screen theme from [qylock](https://github.com/Darkkal44/qylock).
+
+**Manual Install:**
+```bash
+sudo mkdir -p /usr/share/sddm/themes
+sudo cp -r my_configs/sddm/forest /usr/share/sddm/themes/forest
+echo -e "[Theme]\nCurrent=forest" | sudo tee /etc/sddm.conf.d/theme.conf
+```
+
+Restart SDDM or reboot to apply.
+
+**Note:** The `bg.mp4` video file (51MB) is not included in this repo. Download it
+from the [qylock themes repo](https://github.com/Darkkal44/qylock) and place it
+in the theme directory.
+
 ## Requirements
 
 - [Quickshell](https://quickshell.outfoxxed.me/) (built for Quickshell 0.3.1)
 - [Hyprland](https://hyprland.org/) 0.56+
+- [hyprlock](https://github.com/hyprwm/hyprlock) (for screen locking)
+- SDDM (for login screen theme)
 - `awww` and `awww-daemon` (for hyprquickpaper)
 - `magick` / ImageMagick (for thumbnail caching)
 - `Barlow Medium` font (for widget text)
