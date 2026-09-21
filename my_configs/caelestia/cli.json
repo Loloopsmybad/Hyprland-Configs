@@ -1,0 +1,7 @@
+{
+  "theme": {
+    "postHook": "bash /home/kanishk/.config/caelestia/hooks/foot-theme.sh",
+    "enableObsidian": true,
+    "enableVscode": true
+  }
+}

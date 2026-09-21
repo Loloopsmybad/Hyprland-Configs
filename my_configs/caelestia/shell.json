@@ -1,0 +1,101 @@
+{
+    "appearance": {
+        "rounding": {
+            "scale": 1
+        },
+        "transparency": {
+            "base": 0.7,
+            "enabled": true,
+            "layers": 0.6
+        }
+    },
+    "background": {
+        "wallpaperEnabled": false
+    },
+    "bar": {
+        "activeWindow": {
+            "compact": false,
+            "inverted": true
+        },
+        "persistent": true,
+        "popouts": {
+            "activeWindow": true
+        },
+        "showOnHover": false,
+        "statusIcons": [
+            {
+                "enabled": true,
+                "id": "lockStatus"
+            },
+            {
+                "enabled": true,
+                "id": "audio"
+            },
+            {
+                "enabled": true,
+                "id": "microphone"
+            },
+            {
+                "enabled": false,
+                "id": "kbLayout"
+            },
+            {
+                "enabled": true,
+                "id": "network"
+            },
+            {
+                "enabled": true,
+                "id": "bluetooth"
+            },
+            {
+                "enabled": true,
+                "id": "battery"
+            }
+        ],
+        "tray": {
+            "background": false,
+            "compact": false,
+            "recolour": false
+        }
+    },
+    "border": {
+        "rounding": 9,
+        "smoothing": 10,
+        "thickness": 7
+    },
+    "dashboard": {
+        "dragThreshold": 5,
+        "github": {
+            "enabled": true,
+            "refreshInterval": 300000,
+            "showContributions": true,
+            "showPinnedRepos": true,
+            "showStats": true,
+            "username": "kanishk"
+        },
+        "showOnHover": false
+    },
+    "general": {
+        "apps": {
+            "terminal": [
+                "foot"
+            ]
+        }
+    },
+    "launcher": {
+        "showOnHover": false,
+        "useFuzzy": {
+            "actions": true,
+            "apps": true,
+            "schemes": true
+        }
+    },
+    "services": {
+        "audioIncrement": 0.1,
+        "brightnessIncrement": 0.02,
+        "maxVolume": 1.5
+    },
+    "sidebar": {
+        "enabled": true
+    }
+}
